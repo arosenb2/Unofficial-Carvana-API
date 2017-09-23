@@ -1,0 +1,17 @@
+{
+  "name": "unofficial-carvana-api",
+  "version": "1.0.0",
+  "description": "Unofficial Carvana Inventory Search API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js --harmony",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Rosenbaum <aaron.rosenbaum@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.x",
+    "request": "2.x",
+    "request-promise": "4.x"
+  }
+}
