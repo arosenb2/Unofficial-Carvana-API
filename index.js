@@ -4,7 +4,7 @@ const BodyStyles = require('./enums/BodyStyles');
 const FuelTypes = require('./enums/FuelTypes');
 
 const generateRequestOptions = (options = {}) => {
-  Object.assign(options, {
+  _.defaults(options, {
     bodyStyles: BodyStyles.ALL,
     fuelTypes: FuelTypes.ALL,
     minPrice: 10000,
@@ -50,7 +50,7 @@ const generateRequestOptions = (options = {}) => {
 };
 
 const getVehicles = (options = {}) => {
-  const requestOptions = generateRequestOptions(Object.assign(options, { fuelTypes: FuelTypes.ALL, bodyStyles: BodyStyles.ALL }));
+  const requestOptions = generateRequestOptions(_.defaults(options, { fuelTypes: FuelTypes.ALL, bodyStyles: BodyStyles.ALL }));
   return request({
     uri: "https://www.carvana.com/api/v1/inventory",
     method: "POST",
