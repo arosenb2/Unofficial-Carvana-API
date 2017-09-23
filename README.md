@@ -12,9 +12,9 @@ Node 8.x
 The design of the enums for filtering options isn't intuitive - each enumeration is a unique identifier rather than passing an array up.
 
 ## Todos
-[] Async lookups across multiple pages instead of condensing to a single page
-[] Additional filter types
-[] Convert to ES Modules
+- [ ] Async lookups across multiple pages instead of condensing to a single page
+- [ ] Additional filter types
+- [ ] Convert to ES Modules
 
 ## Disclaimer
 This is by no means in complete parity. Use at your own risk. External API is liable to change at any time without notice. **DO NOT ABUSE THEIR API.**
